@@ -1,0 +1,42 @@
+<div class=" offset-4 col-4 div">
+  <br>
+  <input type="text" value="{{resolution}}" id="input">
+
+  <div class="row">
+    <div class="offset-2 col-2">
+      <br>
+      <button id="delete"  (click)="delete()">AC</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="offset-2 col-6">
+      <br>
+      <button class="buttonOperation" (click)="getOperation('%')">%</button>
+      <button class="buttonOperation" (click)="getOperation('X')">X</button>
+      <button class="buttonOperation" (click)="getOperation('-')">-</button>
+      <br>
+      <button class="buttonNumber" (click)="getNumber('7')">7</button>
+      <button class="buttonNumber" (click)="getNumber('8')">8</button>
+      <button class="buttonNumber" (click)="getNumber('9')">9</button>
+      <br>
+      <button class="buttonNumber" (click)="getNumber('4')">4</button>
+      <button class="buttonNumber" (click)="getNumber('5')">5</button>
+      <button class="buttonNumber" (click)="getNumber('6')">6</button>
+      <br>
+      <button class="buttonNumber" (click)="getNumber('1')">1</button>
+      <button class="buttonNumber" (click)="getNumber('2')">2</button>
+      <button class="buttonNumber" (click)="getNumber('3')">3</button>
+    </div>
+    <div class="col-1">
+      <br>
+      <button class="buttonOperation" (click)="getOperation('+')">+</button>
+      <br>
+      <button class="buttonNumber" (click)="getNumber('0')">0</button>
+      <button class="equal" (click)="getResult('=')">=</button>
+    </div>
+  </div>
+  <br>
+
+
+
+</div>
